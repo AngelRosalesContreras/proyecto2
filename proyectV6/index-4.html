@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>Contacto</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+  <!--CSS-->
+  <link rel="stylesheet" href="css/boots.css" >
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="fonts/font-awesome.css">
+  <link rel="stylesheet" href="css/reloj.css">
+  <link rel="stylesheet" href="css/formulario.css">
+  <!--JS-->
+  <script src="js/clock.js" defer></script>
+  <!--end-->
+
+  </head>
+  <body>
+  <!--header-->
+  <header>
+    <div class="logoBox"><h1 class="navbar-brand navbar-brand_ clearfix"><a href="index.html"><img src="img/logo.png" alt=""></a></h1></div>
+    <div class="container">
+        <nav class="navbar navbar-default navbar-static-top tm_navbar clearfix" role="navigation">
+            <ul class="nav sf-menu clearfix">
+                <li class="ico sub-menu"><a href="index.html">Inicio<span></span></a><em></em><strong></strong></li>
+                <li><a href="index-1.html">Acerca de</a><em></em><strong></strong></li>
+                <li><a href="index-2.html">Ventas</a><em></em><strong></strong></li>
+                <li><a href="index-3.html">Blog</a><em></em><strong></strong></li>
+                <li class="active"><a href="index-4.html">Contacto</a><strong></strong></li>
+                <li><a href="index-6.html">Login</a><strong></strong></li>
+            </ul>
+        </nav>
+        <div class="container-clock">
+          <h1 id="time">00:00:00</h1>
+          <p id="date">date</p>
+        </div>
+    </div>
+  </header>
+  <div class="global indent bg-color">
+    <!--content-->
+    <div class="container">
+        <div class="row">
+            <article class="col-lg-12 col-md-12 col-sm-12">
+                <figure class="map">
+                    <iframe src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Brooklyn,+New+York,+NY,+United+States&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=61.282355,146.513672&amp;ie=UTF8&amp;hq=&amp;hnear=Brooklyn,+Kings,+New+York&amp;ll=40.649974,-73.950005&amp;spn=0.01628,0.025663&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+                </figure>
+            </article>
+            <section class="formBox clearfix">
+                <article class="col-lg-4 col-md-4 col-sm-4 info">
+                    <h3>Datos de contacto</h3>
+                    <p>Dirección: <br>Guillermo Valle 11, Centro, 90000 Tlaxcala de Xicohténcatl, Tlax</p>
+                    <p>Telefonos: <br>+52 1 246 238 3333 <br>+52 1 276 106 8665</p>
+                </article>
+                <!-- Formulario -->
+                <article class="col-lg-8 col-md-8 col-sm-8">
+                  <h3>Formulario de contacto</h3>
+                  <form action="" class="formulario" id="formulario">
+                    <!-- Grupo: Nombre -->
+                    <div class="formulario__grupo" id="grupo__nombre">
+                      <label for="nombre" class="formulario__label">Nombre</label>
+                      <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John Doe">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                      </div>
+                      <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                    </div>
+
+                    <!-- Grupo: Correo Electronico -->
+                    <div class="formulario__grupo" id="grupo__correo">
+                      <label for="correo" class="formulario__label">E-mail</label>
+                      <div class="formulario__grupo-input">
+                        <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                      </div>
+                      <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+                    </div>
+
+                    <!-- Grupo: Teléfono -->
+                    <div class="formulario__grupo" id="grupo__telefono">
+                      <label for="telefono" class="formulario__label">Telefono</label>
+                      <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                      </div>
+                      <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+                    </div>
+                    <!-- Grupo: Mensaje -->
+                    <div class="formulario__grupo" id="grupo__usuario">
+                      <label for="usuario" class="formulario__label">Mensaje</label>
+                      <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Escriba el mensaje a enviar">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                      </div>
+                      <p class="formulario__input-error">1 a 500 carácteres</p>
+                    </div>
+
+                    <!-- Grupo: Terminos y Condiciones -->
+              			<div class="formulario__grupo" id="grupo__terminos">
+              				<label class="formulario__label">
+              					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+              					Acepto los Terminos y Condiciones
+              				</label>
+              			</div>
+
+                    <div class="formulario__mensaje" id="formulario__mensaje">
+                      <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor complete el formulario correctamente. </p>
+                    </div>
+
+                    <div class="formulario__grupo formulario__grupo-btn-enviar">
+                      <button type="submit" class="formulario__btn">Send</button>
+                      <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+                    </div>
+                    <div class="formulario__grupo formulario__grupo-btn__cancelar">
+                      <button type="reset" class="formulario__btn">Cancel</button>
+                    </div>
+                  </form>
+                </article>
+            </section>
+        </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+  <!--footer-->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="clearfix"></div>
+        <section class="col-lg-8 col-md-8 col-sm-8 pull-right">
+          <article class="col-lg-7 col-md-7 col-sm-7">
+            <div class="thumb-pad2">
+              <figure><img src="img/page1_icon5.png" alt=""></figure>
+              <div class="thumbnail">
+                <div class="caption">
+                  <p>Guillermo Valle 11, Centro, <br>90000 Tlaxcala de Xicohténcatl, Tlax</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="col-lg-5 col-md-5 col-sm-5">
+            <ul class="follow_icon">
+              <li><a href="#"><img src="img/follow_icon1.png" alt=""></a></li>
+              <li><a href="#"><img src="img/follow_icon2.png" alt=""></a></li>
+              <li><a href="#"><img src="img/follow_icon3.png" alt=""></a></li>
+              <li><a href="#"><img src="img/follow_icon4.png" alt=""></a></li>
+              <li><a href="#"><img src="img/follow_icon5.png" alt=""></a></li>
+              <li><a href="#"><img src="img/follow_icon6.png" alt=""></a></li>
+            </ul>
+          </article>
+        </section>
+        <article class="col-lg-4 col-md-4 col-sm-4 privacy pull-left">
+          <p>Aquarius &copy; 2022 <span>&bull;</span> <a href="index-5.html">Politicas de privacidad</a></p>
+        </article>
+        <!-- {%FOOTER_LINK} -->
+      </div>
+    </div>
+
+  </footer>
+  </body>
+</html>
